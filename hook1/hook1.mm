@@ -13,7 +13,6 @@ CHMethod(1, void, ViewController, say, id, arg1)
 
 __attribute__((constructor)) static void entry()
 {
-    NSLog(@"Hello, Ice And Fire!");
     CHLoadLateClass(ViewController);
     CHClassHook(1, ViewController,say);
 }
